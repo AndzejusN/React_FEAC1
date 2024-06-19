@@ -1,0 +1,154 @@
+@import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
+
+.main-container-advantages {
+    background-color: $color-background;
+    width: 100%;
+    padding-top: 120px;
+
+    .container-advantages {
+        width: 100%;
+        max-width: 1230px;
+        margin: 0 auto;
+        padding: 0 15px 50px 15px;
+
+        .hero-box {
+            width: 100%;
+            min-height: 600px;
+            display: grid;
+            place-items: center;
+            gap: 0;
+            margin-bottom: 50px;
+
+            .center-container {
+                background-color: $color-background;
+                display: flex;
+                height: 100%;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                border-radius: 10px;
+                gap: 2px;
+
+                .hero-box-all {
+                    position: relative;
+                    height: calc(50% - 1px);
+                    width: calc(50% - 1px);
+                    box-shadow: 0 0 10px rgba(0, 0, 255, .3);
+
+                    h3 {
+                        color: $color-white;
+                        text-shadow: -1px 0 $color-black, 0 1px $color-black, 1px 0 $color-black, 0 -1px $color-black;
+                        text-transform: uppercase;
+                        position: absolute;
+                        top: 80%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+
+                .box-left-top {
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+                            rgba(0, 0, 0, 0.2)), url("../../assets/images/index/sand-clock-grey-scale-natural.jpg");
+                    background-size: cover;
+                    border-top-left-radius: 10px;
+                    background-position: left 0 bottom 0;
+                }
+
+                .box-right-top {
+                    background-image: linear-gradient(rgba(0, 0, 0, 0),
+                            rgba(0, 0, 0, 0.2)), url("../../assets/images/index/road-grey-scale.jpg");
+                    background-size: cover;
+                    border-top-right-radius: 10px;
+                }
+
+                .box-left-bottom {
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+                            rgba(0, 0, 0, 0.4)), url("../../assets/images/index/europe-photo-grey-scale.jpg");
+                    background-size: cover;
+                    border-bottom-left-radius: 10px;
+                }
+
+                .box-right-bottom {
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+                            rgba(0, 0, 0, 0.2)), url("../../assets/images/index/truck-fix-grey-natural.jpg");
+                    background-size: cover;
+                    border-bottom-right-radius: 10px;
+                    background-position: left 0 bottom 0;
+                }
+            }
+        }
+    }
+}
+
+@include screen-responsive($screen-md) {
+    body {
+        .main-container-advantages {
+            .container-advantages {
+
+                .hero-box {
+                    background-color: $color-background;
+                    width: 100%;
+                    display: grid;
+                    place-items: center;
+                    margin-bottom: 215px;
+
+                    .center-container {
+                        background-color: $color-background;
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        row-gap: 16px;
+
+                        .hero-box-all {
+                            position: relative;
+                            background-color: $color-background;
+                            border-radius: 20px;
+                            width: 100%;
+                            max-height: 200px;
+                            background-size: cover;
+                            box-shadow: 0 3px 20px rgba(0, 0, 255, .2);
+
+                            h3 {
+                                color: $color-white;
+                                text-shadow: -1px 0 $color-black, 0 1px $color-black, 1px 0 $color-black, 0 -1px $color-black;
+                                text-transform: uppercase;
+                                position: absolute;
+                                top: 80%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+
+                        .box-left-top {
+                            background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+                                    rgba(0, 0, 0, 0.2));
+                            background-position: left 0 bottom 25%;
+                        }
+
+                        .box-right-top {
+                            background-image: linear-gradient(rgba(0, 0, 0, 0),
+                                    rgba(0, 0, 0, 0.2));
+                            background-position: left 0 bottom 40%;
+                        }
+
+                        .box-left-bottom {
+                            background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+                                    rgba(0, 0, 0, 0.4));
+                            background-position: left 0 bottom 30%;
+                        }
+
+                        .box-right-bottom {
+                            background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+                                    rgba(0, 0, 0, 0.2));
+                            background-position: left 0 bottom 30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
