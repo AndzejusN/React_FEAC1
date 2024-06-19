@@ -86,12 +86,12 @@
                             font-weight: 600;
                             text-decoration: none;
                             font-size: 1.5rem;
-                            padding: 26px 16px;
-                            border-bottom: 10px solid transparent;
+                            padding: 28px 17px;
+                            border-bottom: 4px solid transparent;
                             transition: 0.3s ease-out;
 
                             &:hover {
-                                border-bottom: 10px solid $color-secondary-light;
+                                border-bottom: 4px solid $color-secondary-light;
                                 background-color: $color-background;
                             }
                         }

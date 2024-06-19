@@ -1,0 +1,74 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/mixins";
+
+.main-container-search {
+  background-color: $color-background;
+  width: 100%;
+  padding-top: 120px;
+
+  .container-search {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px 50px 15px;
+
+    .search-box {
+      width: 100%;
+      display: grid;
+      place-items: center;
+      gap: 0;
+      margin-bottom: 50px;
+
+      .center-container {
+        background-color: $color-background;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        gap: 2px;
+      }
+    }
+  }
+}
+
+@include screen-responsive($screen-lg) {
+  .main-container-search {
+    .container-search {
+      .search-box {
+        .center-container {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@include screen-responsive($screen-md) {
+  body {
+    .main-container-search {
+      .container-search {
+        .search-box {
+          background-color: $color-background;
+          width: 100%;
+          display: grid;
+          place-items: center;
+          margin-bottom: 215px;
+
+          .center-container {
+            background-color: $color-background;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 16px;
+          }
+        }
+      }
+    }
+  }
+}

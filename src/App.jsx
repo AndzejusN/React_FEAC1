@@ -1,5 +1,6 @@
 import "./App.scss";
 import Home from "./pages/Home/Home.jsx";
+import Dashboard from "./pages/Dashboard/Dashboard.jsx";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Home />} />
         <Route path="/about" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </div>

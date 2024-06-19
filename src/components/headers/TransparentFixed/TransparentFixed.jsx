@@ -22,11 +22,11 @@ const TransparentFixed = () => {
         <div className="main-header-content-wrapper">
           <div className="logo-wrapper">
             <Link to={"/"}>
-              <img src={LogoBig} index="big-logo" alt="Logo UAB Melniko Auto" />
+              <img src={LogoBig} index="big-logo" alt="Logo UAB Ipsum Lorem" />
               <img
                 src={LogoSmall}
                 index="small-logo"
-                alt="Logo UAB Melniko Auto"
+                alt="Logo UAB Ipsum Lorem"
               />
             </Link>
             <div
@@ -65,7 +65,9 @@ const TransparentFixed = () => {
               </li>
             </ul>
             <div className="log-wrapper">
+              <Link to={"/dashboard"}>
                 <PrimaryButton>Login / Sign Up</PrimaryButton>
+              </Link>
             </div>
           </nav>
         </div>

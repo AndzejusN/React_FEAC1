@@ -1,0 +1,120 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/mixins";
+
+.main-container-advantages {
+  background-color: $color-background;
+  width: 100%;
+  padding-top: 120px;
+
+  .container-advantages {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px 50px 15px;
+
+    .hero-box {
+      width: 100%;
+      display: grid;
+      place-items: center;
+      gap: 0;
+      margin-bottom: 50px;
+
+      .center-container {
+        background-color: $color-background;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        gap: 2px;
+
+        p {
+          font-size: 4rem;
+          font-family: "Source Sans Pro";
+          font-style: normal;
+          font-weight: 900;
+          margin: 1rem;
+
+          span.primary-color {
+            font-size: 4rem;
+            font-family: "Source Sans Pro";
+            font-style: normal;
+            font-weight: 900;
+            color: $color-primary-dark;
+          }
+        }
+        p.blank-text {
+          font-size: 2rem;
+          font-family: "Source Sans Pro";
+          font-style: normal;
+          font-weight: 800;
+          color: grey;
+        }
+      }
+    }
+  }
+}
+
+@include screen-responsive($screen-lg) {
+  .main-container-advantages {
+    .container-advantages {
+      .hero-box {
+        .center-container {
+          p {
+            font-size: 2rem;
+            margin: 0.5rem;
+
+            span.primary-color {
+              font-size: 2rem;
+            }
+          }
+          p.blank-text {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include screen-responsive($screen-md) {
+  body {
+    .main-container-advantages {
+      .container-advantages {
+        .hero-box {
+          background-color: $color-background;
+          width: 100%;
+          display: grid;
+          place-items: center;
+          margin-bottom: 215px;
+
+          .center-container {
+            background-color: $color-background;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 16px;
+
+            p {
+              font-size: 1.5rem;
+              margin: 0.4rem;
+
+              span.primary-color {
+                font-size: 1.5rem;
+              }
+            }
+            
+            p.blank-text {
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
