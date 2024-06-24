@@ -1,6 +1,6 @@
 import "./Dashboard.scss";
 
-import TransparentFixed from "../../components/headers/TransparentFixed/TransparentFixed.jsx";
+import TransparentFixed from "@/components/headers/TransparentFixed/TransparentFixed.jsx";
 
 const Dashboard = () => {
   return (

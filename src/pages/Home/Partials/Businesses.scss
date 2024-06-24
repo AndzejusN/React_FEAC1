@@ -1,0 +1,51 @@
+.main-container-businesses {
+  background-color: $color-background;
+  width: 100%;
+  margin-top: 50px;
+
+  .container-businesses {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px 15px 15px;
+
+    .businesses-box {
+      width: 100%;
+      display: grid;
+      place-items: center;
+      gap: 0;
+
+      .center-container {
+        background-color: $color-background;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        border-radius: 10px;
+        gap: 10px;
+
+        .businesses-container {
+          background-color: #fdfef5;
+          flex: 1 1 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: center;
+          padding: 25px;
+          border-radius: 10px;
+
+          .business-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+          }
+
+          .businesses-category, .businesses-name, .businesses-person, .businesses-address {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

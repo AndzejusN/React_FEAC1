@@ -2,12 +2,12 @@ import "./TransparentFixed.scss";
 
 import { useState } from "react";
 
-import LogoBig from "../../../assets/images/logo/logo_horizontal.png";
-import LogoSmall from "../../../assets/images/logo/logo_square.png";
+import LogoBig from "@/assets/images/logo/logo_horizontal.png";
+import LogoSmall from "@/assets/images/logo/logo_square.png";
 
 import { Link } from "react-router-dom";
 
-import PrimaryButton from "../../../components/buttons/PrimaryButton.jsx";
+import PrimaryButton from "@/components/buttons/PrimaryButton.jsx";
 
 const TransparentFixed = () => {
   const [isActive, setIsActive] = useState(false);
@@ -66,7 +66,7 @@ const TransparentFixed = () => {
             </ul>
             <div className="log-wrapper">
               <Link to={"/dashboard"}>
-                <PrimaryButton>Login / Sign Up</PrimaryButton>
+                <PrimaryButton className="bg-primary text-white text-2xl focus:bg-white py-2 px-4">Login / Sign Up</PrimaryButton>
               </Link>
             </div>
           </nav>

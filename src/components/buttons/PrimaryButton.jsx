@@ -1,11 +1,10 @@
-export default function PrimaryButton({ className = '', disabled, children, ...props }) {
+export default function PrimaryButton({ className = '', children, ...props }) {
     return (
         <button
             {...props}
             className={
                 `` + className
             }
-            disabled={disabled}
         >
             {children}
         </button>

@@ -1,28 +1,23 @@
-@import "../../../assets/scss/variables";
-@import "../../../assets/scss/mixins";
-
 .main-container-search {
   background-color: $color-background;
   width: 100%;
-  padding-top: 120px;
 
   .container-search {
     width: 100%;
     max-width: 1230px;
     margin: 0 auto;
-    padding: 0 15px 50px 15px;
+    padding: 0 15px 15px 15px;
 
     .search-box {
       width: 100%;
       display: grid;
       place-items: center;
       gap: 0;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
 
       .center-container {
         background-color: $color-background;
         display: flex;
-        flex-direction: column;
         height: 100%;
         width: 100%;
         justify-content: center;
