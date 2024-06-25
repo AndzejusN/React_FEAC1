@@ -57,7 +57,7 @@ const Businesses = () => {
       category: "Shifting",
       name: "Office Relocation",
       person: "David Transport",
-      address: "Relocation ave 10, Los Angeles",
+      address: "Location ave 10, Los Angeles",
     },
     {
       url: "src/assets/images/business/plumbing-heiko-ruth.jpg",

@@ -30,7 +30,6 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          text-align: center;
           padding: 25px;
           border-radius: 10px;
 
@@ -41,8 +40,42 @@
             margin-bottom: 10px;
           }
 
-          .businesses-category, .businesses-name, .businesses-person, .businesses-address {
+          .businesses-category {
+            background-color: $color-primary-lighter;
+            color: $color-primary;
             margin-top: 10px;
+            border-radius: 25px;
+            display: inline-block;
+            padding: 5px 10px;
+            width: fit-content;
+
+            p {
+              display: inline;
+              font-weight: 700;
+            }
+          }
+
+          .businesses-name {
+            margin-top: 10px;
+            font-weight: 900;
+            span {
+              font-style: italic;
+            }
+          }
+
+          .businesses-person {
+            margin-top: 10px;
+            color: $color-primary;
+            span {
+              font-style: italic;
+              color: black;
+            }
+          }
+          .businesses-address {
+            margin-top: 10px;
+            span {
+              font-style: italic;
+            }
           }
         }
       }
