@@ -1,6 +1,7 @@
-import "./Categories.scss";
-import React, { useState } from "react";
+import React from 'react';
+import './Categories.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useBusinesses, BusinessesProvider } from "@/context/BusinessesContext";
 import {
   faBroom,
   faTools,
@@ -11,7 +12,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Categories = () => {
-  const [categoriesList, setCategoriesList] = useState([
+  const { filterBusinessesByCategory } = useBusinesses();
+
+  const categoriesList = [
     {
       img: faBroom,
       color: "violet",
@@ -42,26 +45,33 @@ const Categories = () => {
       color: "blueviolet",
       name: "Electric",
     },
-  ]);
+  ];
+
+  const handleClick = (categoryName) => {
+    filterBusinessesByCategory(categoryName);
+  };
 
   return (
     <main className="main-container-categories">
       <div className="container-categories">
         <div className="categories-box">
           <div className="center-container">
-            {categoriesList &&
-              categoriesList.map((category, index) => (
-                <div key={index} className="category-container">
-                  {category.img && (
-                    <FontAwesomeIcon
-                      icon={category.img}
-                      style={{ color: category.color }}
-                      className="fa-icon"
-                    />
-                  )}
-                  <h1>{category.name}</h1>
-                </div>
-              ))}
+            {categoriesList.map((category, index) => (
+              <div
+                key={index}
+                className="category-container"
+                onClick={() => handleClick(category.name)}
+              >
+                {category.img && (
+                  <FontAwesomeIcon
+                    icon={category.img}
+                    style={{ color: category.color }}
+                    className="fa-icon"
+                  />
+                )}
+                <h1>{category.name}</h1>
+              </div>
+            ))}
           </div>
         </div>
       </div>
