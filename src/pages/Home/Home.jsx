@@ -1,6 +1,6 @@
 import "./Home.scss";
 
-
+// Comment for Rokas, best coacher in the whole world!!!
 import TransparentFixed from "@/components/headers/TransparentFixed/TransparentFixed.jsx";
 import HeroBoxContainer from "./Partials/HeroBox.jsx";
 import SearchContainer from "./Partials/SearchInput.jsx";
