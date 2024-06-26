@@ -65,7 +65,7 @@ const TransparentFixed = () => {
               </li>
             </ul>
             <div className="log-wrapper">
-              <Link to={"/dashboard"}>
+              <Link to={"/login"}>
                 <PrimaryButton className="bg-primary text-white text-2xl focus:bg-white py-2 px-4">Login / Sign Up</PrimaryButton>
               </Link>
             </div>

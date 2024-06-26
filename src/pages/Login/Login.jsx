@@ -1,18 +1,18 @@
-import "./Dashboard.scss";
+import "./Login.scss";
 
 import TransparentFixed from "@/components/headers/TransparentFixed/TransparentFixed.jsx";
 
-const Dashboard = () => {
+const Login = () => {
   return (
     <>
       <TransparentFixed />
-      <main className="main-container-advantages">
-        <div className="container-advantages">
+      <main className="main-container-login">
+        <div className="container-login">
           <p>Jūs prisijungėte!</p>
         </div>
-      </main>
+      </main> 
     </>
   );
 };
 
-export default Dashboard;
+export default Login;

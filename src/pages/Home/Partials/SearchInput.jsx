@@ -9,7 +9,7 @@ const SearchInput = () => {
       <div className="container-search">
         <div className="search-box">
           <div className="center-container">
-            <SearchInputText type="text" className="rounded-full text-2xl px-5 py-3 w-full md:w-1/2 lg:w-2/3 xl:w-1/2" placeholder="Search" />
+            <SearchInputText type="text" className="rounded-full text-2xl px-5 py-3 w-1/2" placeholder="Search" />
             <div className="rounded-full h-16 w-16 flex items-center justify-center m-8">
               <SearchButton className="bg-primary text-white w-full h-full rounded-full flex items-center justify-center">
                 <BsSearch className="icon-large text-2xl" />
